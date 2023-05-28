@@ -1,0 +1,27 @@
+Calendario
+
+
+<!-- <div>
+    <h1>Demo App</h1>
+    <full-calendar [options]="calendarOptions"></full-calendar>
+  </div>  -->
+
+
+<full-calendar [options]="calendarOptions">
+    <ng-template #eventContent let-arg>
+        <!-- <b>{{arg.timeText}}</b> -->
+        <!-- <i>{{arg.event.title}}</i> -->
+        <!-- <i>{{arg.event | json}}</i> -->
+        <!-- <span class="fa fa-user">Teste</span> -->
+        <!-- {{ arg | json}} -->
+        <div class="fc-content">
+            <span class="fa-stack pull-right" style="height: inherit; line-height: inherit;">
+                <i class="fa fa-circle fa-stack-1x text-info"></i>
+                <i class="fa fa-stack-1x fa-inverse fa-lock"></i>
+            </span>
+            <span class="fc-title">
+                [PK] Condições climáticas - Céu nublado
+            </span>
+        </div>
+    </ng-template>
+</full-calendar>
